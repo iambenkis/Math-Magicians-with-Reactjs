@@ -1,5 +1,5 @@
 import React from 'react';
-// import Operation from './operate';
+import Operate from './operate';
 
 const isNumber = (item) => !!item.match(/[0-9]+/);
 
@@ -40,6 +40,38 @@ class Calculate extends React.Component {
             total : null,
         };
     }
+
+    if (btnName === '.') {
+        if (obj.next) {
+          if (obj.next.includes('.')) {
+            return { ...obj };
+          }
+          return { ...obj, next: `${obj.next}.` };
+        }
+        if (obj.operation) {
+          return { ...obj, next: '0.' };
+        }
+        if (obj.total) {
+          if (obj.total.includes('.')) {
+            return {};
+          }
+          return { ...obj, next: `${obj.total}.` };
+        }
+        return { ...obj, next: '0.' };
+      }
+
+      if (btnName === '=') {
+        if (obj.next && obj.operation) {
+          return {
+            total: Operate(obj.total, obj.next, obj.operation),
+            next: null,
+            operation: null,
+          };
+        }
+        // '=' with no operation, nothing to do
+        return {};
+      }
+
     if (btnName === '+/-') {
         if (obj.next) {
           return { ...obj, next: (-1 * parseFloat(obj.next)).toString() };
@@ -52,7 +84,7 @@ class Calculate extends React.Component {
 
     if (!obj.next && obj.total && !obj.operation) {
         return { ...obj, operation: btnName };
-      }
+    }
 
       // User pressed an operation button and there is an existing operation
     if (obj.operation) {
@@ -65,7 +97,7 @@ class Calculate extends React.Component {
         }
 
         return {
-          total: operate(obj.total, obj.next, obj.operation),
+          total: Operate(obj.total, obj.next, obj.operation),
           next: null,
           operation: btnName,
         };

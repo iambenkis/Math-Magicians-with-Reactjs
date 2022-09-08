@@ -1,16 +1,8 @@
-// import Big from 'big.js';
-import React from 'react';
+import Big from 'big.js';
 
-class Operation extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-
-    };
-  }
-
-  render() {
-    const [numberOne, numberTwo, operation] = this.state;
+const Operate = (one,two,operation) =>  {
+  const numberOne = Big(one);
+  const numberTwo = Big(two);
     if (operation === '+') {
       return numberOne.plus(numberTwo).toString();
     }
@@ -35,7 +27,5 @@ class Operation extends React.Component {
       }
     }
     throw Error(`Unknown operation '${operation}'`);
-  }
 }
-
-export default Operation;
+export default Operate;

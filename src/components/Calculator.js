@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './calculator.css';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class Calculator extends React.Component {
   render() {
+    const [state, setState] = useState ({
+      total : null,
+      next : null,
+      operation: null,
+    })
     return (
       <div className="container">
         <div className="calc-content">
