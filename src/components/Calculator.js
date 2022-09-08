@@ -1,11 +1,11 @@
 import React from 'react';
-import './calculator.css'
+import './calculator.css';
 
 function Calculator() {
   return (
     <div className="container">
-      <div className="content-calc">
-        <div className="calc-screen" />
+      <div className="calc-content">
+        <div className="calc-screen">10</div>
         <div className="calc-btns">
           <button type="button">AC</button>
           <button type="button">%</button>
