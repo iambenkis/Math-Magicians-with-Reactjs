@@ -11,4 +11,5 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgba(160, 160, 160, 0.61);
 }
