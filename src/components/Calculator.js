@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import calculate from '../logic/calculate';
 import './calculator.css';
 
+
 const Calculator = () => {
   const [state, setState] = useState({
     total: null,
@@ -24,6 +25,7 @@ const Calculator = () => {
   if (total) {
     result = `${total}`;
   }
+
   if (next) {
     result = `${next}`;
   }
