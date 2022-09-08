@@ -21,10 +21,9 @@ function Calculator() {
           <button type="button">-</button>
           <button type="button">1</button>
           <button type="button">2</button>
-          <button type="button">2</button>
           <button type="button">3</button>
           <button type="button">+</button>
-          <button type="button">0</button>
+          <button type="button" className="item0">0</button>
           <button type="button">.</button>
           <button type="button">=</button>
         </div>

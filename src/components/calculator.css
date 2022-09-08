@@ -2,7 +2,6 @@
     background-color: red;
     height: 21rem;
     width: 23rem;
-    padding: .7rem;
 }
 
 .calc-content{
@@ -11,8 +10,23 @@
 }
 
 .calc-screen {
-    padding: 1rem;
-    background-color: #fff;
-    font-weight: 700;
-    font-size: 1.5rem;
+    padding: .5rem;
+    background-color: rgb(255, 197, 197);
+    font-weight: 500;
+    font-size: 2.2rem;
+}
+
+.calc-btns{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: rgb(241, 166, 166);
+}
+
+.calc-btns button {
+    padding: .96rem;
+}
+
+.item0 {
+    grid-column: 1 / span 2;
+    grid-row: 5;
 }
