@@ -23,8 +23,8 @@
 .calc-screen .op {
   position: absolute;
   background: rgba(0, 0, 0, 0.055);
-  font-size: .7rem;
-  padding: .09rem .3rem;
+  font-size: 0.7rem;
+  padding: 0.09rem 0.3rem;
 }
 
 .calc-btns {
