@@ -25,7 +25,8 @@ class Calculator extends React.Component {
   }
 
   render() {
-    const { total, next } = this.state;
+    const { total, next, operation } = this.state;
+    const op = operation === '%' ? '%' : operation;
     let result = '';
     if (total) {
       result = `${total}`;
@@ -36,7 +37,10 @@ class Calculator extends React.Component {
     return (
       <div className="container">
         <div className="calc-content">
-          <div className="calc-screen">{result || '0'}</div>
+          <div className="calc-screen">
+            <div className="op">{op}</div>
+            {result || '0'}
+          </div>
           <div className="calc-btns">
             <button onClick={this.dispspalyValue} type="button">AC</button>
             <button onClick={this.dispspalyValue} type="button">%</button>

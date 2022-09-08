@@ -17,6 +17,14 @@
   font-size: 2rem;
   text-align: end;
   height: 4rem;
+  position: relative;
+}
+
+.calc-screen .op {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.055);
+  font-size: .7rem;
+  padding: .09rem .3rem;
 }
 
 .calc-btns {
