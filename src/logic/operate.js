@@ -21,7 +21,7 @@ const Operate = (one, two, operation) => {
   }
   if (operation === '%') {
     try {
-      return this.numberOne.mod(numberTwo).toString();
+      return numberOne.mod(numberTwo).toString();
     } catch (err) {
       return "Can't find modulo as can't divide by 0.";
     }
