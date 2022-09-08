@@ -43,8 +43,8 @@ class Calculator extends React.Component {
           </div>
           <div className="calc-btns">
             <button onClick={this.dispspalyValue} type="button">AC</button>
-            <button onClick={this.dispspalyValue} type="button">%</button>
             <button onClick={this.dispspalyValue} type="button">+/-</button>
+            <button onClick={this.dispspalyValue} type="button">%</button>
             <button onClick={this.dispspalyValue} type="button" className="signs">&divide;</button>
             <button onClick={this.dispspalyValue} type="button">7</button>
             <button onClick={this.dispspalyValue} type="button">8</button>
