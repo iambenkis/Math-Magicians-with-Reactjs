@@ -14,20 +14,29 @@ class Calculator extends React.Component {
     this.dispspalyValue = this.dispspalyValue.bind(this);
   }
 
-  dispspalyValue (e) {
+  dispspalyValue(e) {
     const btnName = e.target.innerText;
-    const obj = calculate(this.state,btnName);
-    console.log(obj, this.state)
-
+    const obj = calculate(this.state, btnName);
+    this.setState(() => ({
+      total: obj.total,
+      next: obj.next,
+      operation: obj.operation,
+    }));
   }
 
   render() {
-    const {total , next, op} = this.state;
-    console.log(this.state)
+    const { total, next } = this.state;
+    let result = '';
+    if (total) {
+      result = `${total}`;
+    }
+    if (next) {
+      result = `${next}`;
+    }
     return (
       <div className="container">
         <div className="calc-content">
-          <div className="calc-screen">{next}</div>
+          <div className="calc-screen">{result || '0'}</div>
           <div className="calc-btns">
             <button onClick={this.dispspalyValue} type="button">AC</button>
             <button onClick={this.dispspalyValue} type="button">%</button>

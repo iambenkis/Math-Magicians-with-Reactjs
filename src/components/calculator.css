@@ -10,12 +10,13 @@
 }
 
 .calc-screen {
-  padding: 0.5rem;
+  padding: 0.4rem;
   background-color: rgba(133, 133, 133, 0.568);
   color: #fff;
   font-weight: 400;
   font-size: 2rem;
   text-align: end;
+  height: 4rem;
 }
 
 .calc-btns {
