@@ -1,0 +1,43 @@
+.container {
+  border: 1px solid rgba(255, 255, 255, 0.459);
+  width: 23rem;
+}
+
+.calc-content {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(218, 218, 218);
+}
+
+.calc-screen {
+  padding: 0.5rem;
+  background-color: rgba(133, 133, 133, 0.568);
+  color: #fff;
+  font-weight: 400;
+  font-size: 2rem;
+  text-align: end;
+}
+
+.calc-btns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: rgba(189, 189, 189, 0.274);
+  gap: 1.12px;
+}
+
+.calc-btns button {
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  font-size: 0.7rem;
+}
+
+.item0 {
+  grid-column: 1 / span 2;
+  grid-row: 5;
+}
+
+.signs {
+  background-color: rgb(238, 95, 0);
+  color: #fff;
+}

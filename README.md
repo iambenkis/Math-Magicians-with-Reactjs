@@ -25,10 +25,11 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Baraka Danny (Me)**
+👤 **Benjamin Kisenge (Me)**
 
-- GitHub: [@barakadan](https://github.com/barakadanny)
-- LinkedIn: [danny baraka](https://www.linkedin.com/in/danny-baraka-589156169/)
+* GitHub: [@benjamin kisenge](https://github.com/iambenkis)
+* Twitter: [@benjamin kisenge](https://twitter.com/iambenkis)
+* LinkedIn: [benjamin kisenge](https://www.linkedin.com/in/ben-kisenge/)
 
 ## 🤝 Contributing
 
