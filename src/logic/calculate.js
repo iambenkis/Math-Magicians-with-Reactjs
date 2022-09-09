@@ -3,7 +3,6 @@ import operate from './operate';
 const isNumber = (item) => !!item.match(/[0-9]+/);
 
 const calculate = (obj, btnName) => {
-  // const [obj ,btnName] = this.state;
   if (btnName === 'AC') {
     return {
       total: null,
