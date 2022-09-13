@@ -5,13 +5,14 @@ This is a website for all fans of mathematics. It is a Single Page App (SPA) tha
 - Make simple calculations.
 - Read a random math-related quote.
 
+![math-magicians](./math.png)
+
 ## Technology used
 
 - React
 - JavaScript
 - CSS
 - JSX
-- Jest
 
 ### Getting Started
 
