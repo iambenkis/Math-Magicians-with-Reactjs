@@ -15,11 +15,11 @@ body {
   background: rgba(160, 160, 160, 0.61);
 }
 
-a:-webkit-any-link{
+a:-webkit-any-link {
   text-decoration: none;
   color: rgb(95, 52, 22);
 }
 
-a:-webkit-any-link:hover{
+a:-webkit-any-link:hover {
   color: rgb(238, 95, 0);
 }
