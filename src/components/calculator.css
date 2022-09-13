@@ -1,3 +1,13 @@
+li {
+  cursor: pointer;
+  list-style: none;
+  margin-right: 1rem;
+  color: rgb(107, 51, 13);
+}
+
+li:hover  {
+  color: rgb(238, 95, 0)
+}
 .container {
   border: 1px solid rgba(255, 255, 255, 0.459);
   width: 23rem;
