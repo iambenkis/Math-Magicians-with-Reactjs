@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 import Calculator from './components/Calculator';
 import Header from './components/header';
 import Home from './components/home';
@@ -9,7 +10,11 @@ class App extends React.Component {
     return (
       <>
         <Header />
-        <Quote />
+        <Routes>
+            <Route path='/' exact element={<Home />} />
+            <Route path='/calculator' exact element={<Calculator />} />
+            <Route path='/quote' exact element={<Quote />} />
+        </Routes>
       </>
     );
   }
