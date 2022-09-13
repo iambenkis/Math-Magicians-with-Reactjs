@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <div className="navBar"
@@ -23,12 +24,17 @@ const Header = () => {
             <ul style={{
                 display:'flex',
             }}>
-                <li>HOME</li>
-                <li>CALCULATOR</li>
-                <li>QUOTE</li>
+                <li>
+                    <Link to='/'>HOME</Link>
+                </li>
+                <li>
+                    <Link to='/calculator'>CALCULATOR</Link>
+                </li>
+                <li>
+                    <Link to='/quote'>QUOTE</Link>
+                </li>
             </ul>
         </div>
     )
 }
-
 export default Header;
