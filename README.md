@@ -14,6 +14,10 @@ This is a website for all fans of mathematics. It is a Single Page App (SPA) tha
 - CSS
 - JSX
 
+## Live Demo
+
+[Live Demo Link](https://6322f9cf91cf421178ea0051--polite-trifle-eb5c52.netlify.app/)  (Available)
+
 ### Getting Started
 
 To get a local copy up and running follow these simple example steps.
